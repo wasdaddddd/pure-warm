@@ -1,147 +1,253 @@
-<section class="pricing" id="fiyatlar">
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure WARM Pro - Yapay Zeka Destekli Web Kalkanı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <h2>
-        Siber Kalkanını <span>Özelleştir</span>
-    </h2>
+    <div class="cyber-grid"></div>
 
-    <div class="pricing-grid">
+    <nav>
+        <div class="logo" onclick="window.scrollTo(0,0)">Pure <span>WARM</span></div>
+        <a href="#fiyatlar" class="download-btn">Planları İncele</a>
+    </nav>
 
-        <!-- FREE -->
-
-        <div class="price-card">
-
-            <div>
-
-                <h4>Free</h4>
-
-                <div class="price-value">
-                    0 TL<span> / ömür boyu</span>
-                </div>
-
-                <ul class="price-features">
-                    <li>Standart Sayfa Reklam Engelleyici</li>
-                    <li>Temel Yapay Zeka Süzgeci (%50 Hassasiyet)</li>
-                    <li>Tek Cihaz Desteği</li>
-                    <li>Topluluk Destek Forumu</li>
-                </ul>
-
-            </div>
-
-            <button class="price-btn open-download-trigger">
-                Ücretsiz Başla
-            </button>
-
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Web Deneyiminizi <span>Pure WARM</span> İle Temizleyin</h1>
+            <p>Yapay zeka filtreleme algoritması, ışık hızında YouTube video reklam atlatıcısı ve dezenformasyon kalkanı tek bir eklentiyle tarayıcınızda.</p>
+            <a href="#fiyatlar" class="download-btn" style="padding: 14px 36px; font-size: 16px;">Sürümünü Seç</a>
         </div>
 
-        <!-- PREMIUM -->
-
-        <div class="price-card popular">
-
-            <div class="popular-badge">
-                En Popüler
-            </div>
-
-            <div>
-
-                <h4>Premium</h4>
-
-                <div class="price-value">
-                    49 TL<span> / ay</span>
+        <div class="hero-visual">
+            <div class="mock-extension" id="extWindow">
+                <div class="ext-header">
+                    <div class="logo" style="font-size: 18px; cursor: default;">Pure <span>WARM</span> <span style="font-size: 9px; background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 10px; font-style: normal; color: white;">PRO</span></div>
                 </div>
-
-                <ul class="price-features">
-
-                    <li>
-                        Işık Hızında YouTube Reklam Avcısı
-                        (16x Kod Algoritması)
-                    </li>
-
-                    <li>
-                        YouTube Anti-Adblock Engellerini
-                        Aşma Garantisi
-                    </li>
-
-                    <li>
-                        Gelişmiş Dezenformasyon Kalkanı
-                        (%100 Hassasiyet)
-                    </li>
-
-                    <li>
-                        Sosyal Medya Sponsorlu İçerik Temizliği
-                    </li>
-
-                    <li>
-                        3 Cihaza Kadar Eşzamanlı
-                        Profil Senkronizasyonu
-                    </li>
-
-                    <li>
-                        Öncelikli Canlı Güncelleme Çekirdeği
-                    </li>
-
-                </ul>
-
-            </div>
-
-            <button
-                class="price-btn yakinda-btn"
-                disabled
-            >
-                Yakında
-            </button>
-
-        </div>
-
-        <!-- PREMIUM PLUS -->
-
-        <div class="price-card">
-
-            <div>
-
-                <h4>Premium+</h4>
-
-                <div class="price-value">
-                    99 TL<span> / ay</span>
+                <div class="ext-content">
+                    <div class="ext-score-box">
+                        <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 3px;">Ağ Güvenilirlik Skoru</div>
+                        <div id="simSkor" style="font-size: 32px; font-weight: 800; color: var(--accent-green);">%100</div>
+                    </div>
+                    <div class="ext-grid">
+                        <div class="ext-box taranan">
+                            <div style="color: var(--text-muted);">Taranan</div>
+                            <div id="simTaranan" style="font-weight: 700; margin-top: 2px;">0</div>
+                        </div>
+                        <div class="ext-box guvenli">
+                            <div style="color: var(--accent-green);">Güvenli</div>
+                            <div id="simGuvenli" style="font-weight: 700; margin-top: 2px;">0</div>
+                        </div>
+                        <div class="ext-box kirli">
+                            <div style="color: #ef4444;">Riskli</div>
+                            <div id="simKirli" style="font-weight: 700; margin-top: 2px;">0</div>
+                        </div>
+                    </div>
+                    <div class="ext-control">
+                        <div style="font-size: 12px; font-weight: 600;">
+                            Evrensel Reklam Engelleyici
+                            <div style="font-size: 9px; color: var(--text-muted); font-weight: 400; margin-top: 1px;">Simülasyonu başlatmak için açın</div>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="simToggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <ul class="price-features">
+    <section class="why-us">
+        <div class="why-us-title">Neden <span>Pure WARM</span>?</div>
+        <div class="why-us-grid">
+            <div class="why-item">
+                <div class="why-icon-box">🚀</div>
+                <div class="why-content">
+                    <h4>Sıfır Ram & CPU Kasması</h4>
+                    <p>Geleneksel reklam engelleyiciler gibi tarayıcınızın canını okumaz. Arka planda ultra hafif script altyapısıyla çalışır, varlığını bile hissetmezsiniz.</p>
+                </div>
+            </div>
+            <div class="why-item">
+                <div class="why-icon-box">🎯</div>
+                <div class="why-content">
+                    <h4>YouTube Engellerine Yakalanmaz</h4>
+                    <p>YouTube'un anti-adblock duvarlarını manipüle eden özel atlatma algoritması sayesinde asla "Reklam engelleyici kullanıyorsunuz" uyarısı almazsınız.</p>
+                </div>
+            </div>
+            <div class="why-item">
+                <div class="why-icon-box">🧠</div>
+                <div class="why-content">
+                    <h4>Sadece Reklam Değil, Bilgi Filtresi</h4>
+                    <p>İnternetteki tık tuzaklarını (clickbait), manipülatif başlıkları ve bilgi kirliliğini gelişmiş süzgeciyle tespit eden ilk ve tek entegre kalkan projesidir.</p>
+                </div>
+            </div>
+            <div class="why-item">
+                <div class="why-icon-box">🔒</div>
+                <div class="why-content">
+                    <h4>%100 Yerel Veri Güvenliği</h4>
+                    <p>Gözatmakta olduğunuz web sayfaları veya tarama geçmişiniz hiçbir harici sunucuya taşınmaz. Her şey sizin cihazınızda başlar ve cihazınızda biter.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <li>
-                        Premium Planının Tüm Özellikleri
-                    </li>
+    <section class="features">
+        <div class="feature-card">
+            <h3><span>01.</span> Akıllı Reklam Engelleyici</h3>
+            <p>YouTube video içi reklamları tarayıcıyı kasmadan saliseler içinde simüle ederek otomatik geçer.</p>
+        </div>
+        <div class="feature-card">
+            <h3><span>02.</span> WARM Yapay Zeka Süzgeci</h3>
+            <p>100'den fazla kriteri tarayarak bilgi kirliliği barındıran içerikleri sizin için işaretler.</p>
+        </div>
+        <div class="feature-card">
+            <h3><span>03.</span> Sosyal Medya Koruyucu</h3>
+            <p>X, Instagram ve Google sponsorlu gönderilerini sayfa düzenini bozmadan sessizce temizler.</p>
+        </div>
+    </section>
 
-                    <li>
-                        Sınırsız Cihaz ve Profil Eşzamanlama
-                    </li>
-
-                    <li>
-                        Geliştirici API Erişimi
-                        (Kendi Filtreni Yaz)
-                    </li>
-
-                    <li>
-                        Yeni Filtre Modellerine
-                        1 Ay Önceden Erken Erişim
-                    </li>
-
-                    <li>
-                        7/24 Birebir Discord ve Bilet
-                        Üzerinden Teknik Destek
-                    </li>
-
-                </ul>
-
+    <section class="pricing" id="fiyatlar">
+        <h2>Siber Kalkanını <span>Özelleştir</span></h2>
+        <div class="pricing-grid">
+            
+            <div class="price-card">
+                <div>
+                    <h4>Free</h4>
+                    <div class="price-value">0 TL<span> / ömür boyu</span></div>
+                    <ul class="price-features">
+                        <li>Standart Sayfa Reklam Engelleyici</li>
+                        <li>Temel Yapay Zeka Süzgeci (%50 Hassasiyet)</li>
+                        <li>Tek Cihaz Desteği</li>
+                        <li>Topluluk Destek Forumu</li>
+                    </ul>
+                </div>
+                <button class="price-btn open-download-trigger">Ücretsiz Başla</button>
             </div>
 
-            <button
-                class="price-btn yakinda-btn"
-                disabled
-            >
-                Yakında
-            </button>
+            <div class="price-card popular">
+                <div class="popular-badge">En Popüler</div>
+                <div>
+                    <h4>Premium</h4>
+                    <div class="price-value">49 TL<span> / ay</span></div>
+                    <ul class="price-features">
+                        <li>Işık Hızında YouTube Reklam Avcısı (16x Kod Algoritması)</li>
+                        <li>YouTube Anti-Adblock Engellerini Aşma Garantisi</li>
+                        <li>Gelişmiş Dezenformasyon Kalkanı (%100 Hassasiyet)</li>
+                        <li>Sosyal Medya Sponsorlu İçerik Temizliği</li>
+                        <li>3 Cihaza Kadar Eşzamanlı Profil Senkronizasyonu</li>
+                        <li>Öncelikli Canlı Güncelleme Çekirdeği</li>
+                    </ul>
+                </div>
+                <button class="price-btn open-payment-trigger" data-plan="Premium" data-price="49 TL">Premium'a Geç</button>
+            </div>
 
+            <div class="price-card">
+                <div>
+                    <h4>Premium+</h4>
+                    <div class="price-value">99 TL<span> / ay</span></div>
+                    <ul class="price-features">
+                        <li>Premium Planının Tüm Özellikleri</li>
+                        <li>Sınırsız Cihaz ve Profil Eşzamanlama</li>
+                        <li>Geliştirici API Erişimi (Kendi Filtreni Yaz)</li>
+                        <li>Yeni Filtre Modellerine 1 Ay Önceden Erken Erişim</li>
+                        <li>7/24 Birebir Discord ve Bilet Üzerinden Teknik Destek</li>
+                    </ul>
+                </div>
+                <button class="price-btn open-payment-trigger" data-plan="Premium+" data-price="99 TL">Premium+'a Yükselt</button>
+            </div>
         </div>
+    </section>
 
+    <footer>
+        <div class="footer-copy">
+            &copy; 2026 Pure WARM Pro. Tüm hakları saklıdır.
+        </div>
+        <div class="footer-links">
+            <a id="btnPrivacy">Gizlilik Politikası</a>
+            <a id="btnCookies">Çerez Politikası</a>
+        </div>
+    </footer>
+
+    <div class="modal" id="modalDownload">
+        <div class="modal-content">
+            <span class="close-modal" id="closeDownload">&times;</span>
+            <div class="modal-header">Pure WARM Manuel Kurulum Rehberi</div>
+            <div class="modal-body">
+                <p>Eklentimiz şu anda resmi mağaza onay sürecindedir. Beklemeden hemen kullanmak için aşağıdaki adımları uygulayabilirsiniz:</p>
+                <div class="setup-steps">
+                    <div class="setup-step"><strong>1.</strong> Aşağıdaki butondan <code>pure-warm-ai.zip</code> dosyasını bilgisayarınıza indirin ve klasöre çıkartın.</div>
+                    <div class="setup-step"><strong>2.</strong> Chrome tarayıcınızdan yeni bir sekme açıp <code>chrome://extensions</code> adresine gidin.</div>
+                    <div class="setup-step"><strong>3.</strong> Açılan sayfanın sağ üst köşesindeki <strong>"Geliştirici Modu"</strong> anahtarını aktif hale getirin.</div>
+                    <div class="setup-step"><strong>4.</strong> Sol üstte beliren <strong>"Paketlenmemiş öğe yükle"</strong> butonuna tıklayın ve ZIP'ten çıkardığınız klasörü seçin.</div>
+                </div>
+                <a href="dosyalar/pure-warm.zip" download="pure-warm.zip" class="action-pay-btn" style="text-decoration:none; display:block; text-align:center; margin-top:25px;">
+                    Eklentiyi İndir (.ZIP)
+                </a>
+            </div>
+        </div>
     </div>
 
-</section>
+    <div class="modal" id="modalPayment">
+        <div class="modal-content payment-modal-content">
+            <span class="close-modal" id="closePayment">&times;</span>
+            <div class="modal-header">Güvenli Lisans Ödemesi</div>
+            <div class="modal-body">
+                <div class="payment-summary">
+                    Seçilen Plan: <span id="summaryPlanName" style="color: var(--accent-green); font-weight:800;">-</span> 
+                    (<span id="summaryPlanPrice">-</span>)
+                </div>
+                
+                <form id="credit-card-form">
+                    <div class="form-group">
+                        <label>Kart Üzerindeki İsim</label>
+                        <input type="text" id="cardName" placeholder="Ahmet Yılmaz" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Kart Numarası</label>
+                        <input type="text" id="cardNumber" placeholder="4444 5555 6666 7777" maxlength="19" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Son Kullanma (AA/YY)</label>
+                            <input type="text" id="cardExpiry" placeholder="12/28" maxlength="5" required>
+                        </div>
+                        <div class="form-group">
+                            <label>CVC / CVP</label>
+                            <input type="text" id="cardCvc" placeholder="123" maxlength="3" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="action-pay-btn">Ödemeyi Tamamla ve Lisans Üret</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modalPrivacy">
+        <div class="modal-content">
+            <span class="close-modal" id="closePrivacy">&times;</span>
+            <div class="modal-header">Gizlilik Politikası</div>
+            <div class="modal-body">
+                <p>Pure WARM Pro olarak gizliliğinize en üst düzeyde önem veriyoruz...</p>
+                <h5>1. Toplanan Veriler</h5>
+                <p>Kişisel verileriniz asla uzak sunucularımıza gönderilmez veya kaydedilmez.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modalCookies">
+        <div class="modal-content">
+            <span class="close-modal" id="closeCookies">&times;</span>
+            <div class="modal-header">Çerez Politikası</div>
+            <div class="modal-body">
+                <p>Bu web sitesinde, kullanıcı deneyimini artırmak amacıyla çerezler kullanılmaktadır.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
